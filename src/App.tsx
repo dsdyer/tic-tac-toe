@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div className="board"></div>
-      <div className="reset"><button></button></div>
+      <div className="controls"><button className='reset'></button></div>
     </>
   )
 }
