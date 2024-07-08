@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+To run: `npm run dev`
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Tic-Tac-Toe Game in React
+## Author: David Dyer
+A step-by-step guide to building a React app in node.js using npm, Vitejs, TypeScript, and Git
 
-Currently, two official plugins are available:
+## The Ground
+We're going to use [Vitejs](https://www.vitejs.dev) to set up the foundations of our project. [Why not use create-react-app?](https://dev.to/ag2byte/create-react-app-is-officially-dead-h7o)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I'm using git bash for Windows, VSCode, and the Chrome browser, version 126.0.6478.127 (64-bit)
 
-## Expanding the ESLint configuration
+0. First, we need to decide where to put our project, and navigate to that directory in our terminal. I'm locating mine in my Home directory.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+cd ~/
+mkdir tic-tac-toe
+cd tic-tac-toe
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Install Vite and create our App
+  
+    We need to create our app from Powershell or the VSCode terminal, because the Git for Windows terminal doesn't accept arrow key input, which we need for this step
+
+    1.1 `code .`
+
+    1.2 From the `Terminal` menu at the top, select `New Terminal`
+    ![Terminal -> New Terminal](dev-assets\vscode-terminal.png)
+
+  1.3 In the new terminal (at the bottom of the screen by default), run: `npm create vite`
+* Select your choice of JavaScript or [TypeScript](https://www.typescriptlang.org/) using the arrow keys and press `Enter`.
+* If you know TypeScript you should always use TypeScript.
