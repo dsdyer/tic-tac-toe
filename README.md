@@ -2,7 +2,7 @@ To run: `npm run dev`
 
 # Tic-Tac-Toe Game in React
 ## Author: David Dyer
-A step-by-step guide to building a React app in node.js using npm, Vitejs, TypeScript, and Git
+A step-by-step guide to building a React app from the ground up, using node.js using npm, Vitejs, TypeScript, and Git
 
 ## The Ground
 We're going to use [Vitejs](https://www.vitejs.dev) to set up the foundations of our project. [Why not use create-react-app?](https://dev.to/ag2byte/create-react-app-is-officially-dead-h7o)
