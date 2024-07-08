@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Board from './Board'
+import Controls from './Controls'
 import './App.css'
 
 function App() {
@@ -8,8 +8,8 @@ function App() {
 
   return (
     <>
-      <div className="board"></div>
-      <div className="controls"><button className='reset'></button></div>
+      <Board></Board>
+      <Controls></Controls>
     </>
   )
 }
