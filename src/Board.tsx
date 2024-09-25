@@ -1,18 +1,24 @@
 import { useState } from 'react'
 import Square from './Square'
+import Controls from './Controls';
+// import { TicTacToe } from './TicTacToe.js'
+
+// const ttt = new TicTacToe();
+
+
+
+
 
 function Board() {
-  const [board, setBoard] = useState(Array(9).fill(0))
-
+  const [board, setBoard] = useState(Array(9).fill(' '))
+  
   function handleClick(i: number) {
-
-    const newBoard = board.slice()
-
-    newBoard[i] = (newBoard[i] + 1) % 3
-
+    const newBoard = board.slice();
+    newBoard[i] = (newBoard[i] + 1) % 3;
+    // ttt.move(i+1)
+    // console.log(ttt.board)
     setBoard(newBoard)
   }
-
 
   return (
     <>
@@ -24,6 +30,7 @@ function Board() {
           ))
         }
       </div>
+      <Controls handleReset={() => setBoard(Array(9).fill(' '))}/>
     </>
   )};
 

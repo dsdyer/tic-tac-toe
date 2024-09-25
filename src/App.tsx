@@ -1,14 +1,10 @@
-import Board from './Board'
-import Controls from './Controls'
-import './App.css'
+import Game from './Game'
 
 function App() {
-
   return (
-    <>
-      <Board></Board>
-    </>
+    <Game />
   )
 }
 
 export default App
+ 
